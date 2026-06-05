@@ -1,0 +1,39 @@
+name: Bug report
+description: File a bug to help us improve Cinder.
+labels: ['bug', 'triage']
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Cinder version
+      placeholder: e.g. 0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Run `npm run dev`
+        2. Click ...
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / logs
+      placeholder: |
+        Paste logs inline, or attach files in the issue body.

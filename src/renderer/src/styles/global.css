@@ -1,0 +1,73 @@
+:root {
+  color-scheme: dark;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--cinder-bg, #0d0907);
+}
+
+body {
+  font-family: 'Inter Variable', 'Inter', system-ui, -apple-system, sans-serif;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Power-user numbers / dates / IDs: monospace. */
+.mantine-Text-root[data-mono='true'],
+.cinder-mono {
+  font-family: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, SFMono-Regular,
+    Menlo, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* Headings default to monospace for a dense info-feel. */
+.cinder-heading,
+h1.cinder-heading,
+h2.cinder-heading,
+h3.cinder-heading {
+  font-family: 'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, monospace;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Brand "Cinder" wordmark — slightly larger tracking for the warm look. */
+.cinder-wordmark {
+  font-family: 'JetBrains Mono Variable', 'JetBrains Mono', monospace;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  background: linear-gradient(90deg, #f59f00 0%, #ff922b 50%, #ff6b35 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.cinder-amber-glow {
+  box-shadow: 0 0 0 1px rgba(245, 159, 0, 0.45), 0 8px 32px -8px rgba(245, 159, 0, 0.35);
+}
+
+.cinder-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  gap: 1rem;
+  text-align: center;
+}
+
+.cinder-empty h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.cinder-table-mono td,
+.cinder-table-mono th {
+  font-variant-numeric: tabular-nums;
+}

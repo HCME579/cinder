@@ -1,0 +1,9 @@
+node_modules
+dist
+dist-electron
+release
+out
+build
+coverage
+*.log
+package-lock.json
